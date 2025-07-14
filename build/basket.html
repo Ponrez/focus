@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Корзина</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img src="./img/logo.svg" alt="logo">
+      </div>
+      <div class="header__mid">
+        <a href="../catalog.html" class="header__link header__link--another">Каталог</a>
+        <a href="#" class="header__link">Блог</a>
+        <a href="../contacts.html" class="header__link">Контакты</a>
+      </div>
+      <div class="header__right">
+        <button class="header__search">
+          <img src="./img/search.svg" alt="search">
+        </button>
+        <a href="../basket.html" class="header__basket">
+          <img src="./img/basket.svg" alt="basket">
+        </a>
+      </div>
+      <div class="header__right-mini">
+        <button class="header__search">
+          <img src="./img/search.svg" alt="search">
+        </button>
+        <div class="header__burger">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu__list">
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">Блог</a></li>
+    <li><a href="#">Контакты</a></li>
+    <li><a href="#">
+        <img src="./img/basket.svg" alt="basket">
+      </a></li>
+  </ul>
+</nav>
+  <main>
+    <section class="main-bs">
+      <div class="container">
+        <div class="main-bs__wrapper">
+          <div class="main-bs__img">
+            <img src="./img/empty_cart.svg" alt="cart">
+          </div>
+          <h1 class="main-bs__title">Ваша корзина пуста
+          </h1>
+          <h2 class="main-bs__subtitle"><a href="catalog.html">Нажмите здесь</a>, чтобы продолжить покупки</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="./img/logo.svg" alt="logo">
+        </div>
+        <a href="tel:89999999999" class="footer__link-tel">+7 (999) 999-99-99</a>
+        <div class="footer__geo">Новосибирск, Маркса 6</div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__row">
+          <div class="footer__col">
+            <div class="footer__nav-title">Каталог</div>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">Система 48 AIR</a></li>
+              <li class="footer__item"><a href="#">Система 220 SMART</a></li>
+              <li class="footer__item"><a href="#">Встраиваемые светильники</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__nav-title">Покупателю</div>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">Каталог</a></li>
+              <li class="footer__item"><a href="#">Блог</a></li>
+              <li class="footer__item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer__divider">
+        <a href="#" class="footer__privacy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

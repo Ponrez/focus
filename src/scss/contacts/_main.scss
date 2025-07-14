@@ -1,0 +1,84 @@
+.ct-main {
+  padding-top: 43px;
+  padding-bottom: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ct-main__title {
+  font-size: 80px;
+  line-height: 98%;
+  letter-spacing: -2.4px;
+  color: #323232;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.ct-main__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ct-main__left {
+  flex-basis: 640px;
+}
+.ct-main__item {
+  display: flex;
+  gap: 10px;
+}
+.ct-main__item-name {
+  flex-basis: 180px;
+  color: #c4c4c4;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 98%;
+  letter-spacing: -0.72px;
+  margin-bottom: 24px;
+  flex-basis: 180px;
+}
+.ct-main__item-descr {
+  display: block;
+  color: #454545;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 98%;
+  letter-spacing: -0.72px;
+  margin-bottom: 24px;
+  font-style: normal;
+  flex: 1;
+}
+
+@media (max-width: 1440px) {
+  .ct-main {
+    padding-bottom: 60px;
+  }
+  .ct-main__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ct-main__left {
+    flex-basis: unset;
+    margin-bottom: 40px;
+  }
+  .ct-main__title {
+    margin-right: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 1440px) {
+  iframe {
+    width: 100%; /* Когда ширина экрана меньше 1440px, карта будет занимать 100% ширины */
+  }
+}
+
+@media (max-width: 1024px) {
+  .ct-main__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ct-main__item-name {
+    font-size: 20px;
+  }
+  .ct-main__item-descr {
+    font-size: 20px;
+  }
+}

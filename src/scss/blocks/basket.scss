@@ -1,0 +1,27 @@
+.main-bs {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-bs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-bs__img {
+  margin-bottom: 30px;
+}
+.main-bs__title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 20px;
+}
+.main-bs__subtitle {
+  color: #555;
+  font-size: 16px;
+  & a {
+    color: #1881ae;
+  }
+}

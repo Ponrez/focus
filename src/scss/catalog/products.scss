@@ -1,0 +1,63 @@
+.products {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.products__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(690px, 1fr));
+  gap: 20px;
+}
+.product__card {
+  margin-bottom: 80px;
+}
+.product__card-img {
+  margin-bottom: 25px;
+}
+.product__card-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: -0.02em;
+  color: #454545;
+}
+.product__card-img {
+  overflow: hidden; /* обрежет края картинки */
+}
+
+/* 2. Плавная анимация */
+.product__card-img img {
+  transition: transform 0.3s ease;
+}
+
+/* 3. Эффект при наведении */
+.product__card:hover .product__card-img img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1440px) {
+  .products__cards {
+    justify-items: center;
+  }
+  .product__card {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products__cards {
+    grid-template-columns: 1fr;
+  }
+  .product__card {
+    width: 100%;
+    min-width: 0; /* Принудительно убираем любую минимальную ширину */
+  }
+  .product__card-img img {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .product__card-title {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Focus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  @@include('blocks/header.html')
+  <main>
+    <section class="pr-main">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="/catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="/catalog.html">Встраиваемые светильники
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span>Встраиваемый светильник Qwadra QW3003-B
+            </span>
+          </li>
+        </ul>
+        <div class="pr-main__wrapper">
+          <div class="product">
+            <div class="product__main-image">
+              <a href="../img/product/1.jpg" data-fancybox="gallery" id="main-image">
+                <img src="../img/product/1.jpg" alt="Main Image">
+              </a>
+            </div>
+            <!-- Маленькие изображения -->
+            <div class="product__small-images">
+              <a href="../img/product/1.jpg" data-fancybox="gallery" class="thumbnail">
+                <img src="../img/product/1.jpg" alt="Thumbnail 1">
+              </a>
+              <a href="../img/product/2.jpg" data-fancybox="gallery" class="thumbnail">
+                <img src="../img/product/2.jpg" alt="Thumbnail 2">
+              </a>
+              <a href="../img/product/3.jpg" data-fancybox="gallery" class="thumbnail">
+                <img src="../img/product/3.jpg" alt="Thumbnail 3">
+              </a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h1 class="product-info__title">Встраиваемый светильник Qwadra QW3003-B</h1>
+            <h2 class="product-info__subtitle">Артикул QW3003-B</h2>
+            <div class="product-info__price">1 190 ₽</div>
+            <div class="product-info__box">
+              <div class="product-info__box-item">
+                <span>Материал</span>
+                <span>Алюминий и пластик</span>
+              </div>
+              <div class="product-info__box-item">
+                <span>Высота</span>
+                <span>42 мм</span>
+              </div>
+              <div class="product-info__box-item">
+                <span>Длина</span>
+                <span>136 мм</span>
+              </div>
+              <div class="product-info__box-item">
+                <span>Тип лампы</span>
+                <span>GU10</span>
+              </div>
+            </div>
+            <div class="product-info__btns">
+              <div class="product-info__quantity-control">
+                <button class="product-info__minus">-</button>
+                <input type="number" class="product-info__quantity" value="1" min="1">
+                <button class="product-info__plus">+</button>
+                <span>шт</span>
+              </div>
+              <button class="product-info__btn">В корзину</button>
+            </div>
+            <p class="product-info__text">
+              Безрамные светильники – это современное решение для освещения помещений, которое совсем недавно появилось
+              на рынке.
+              Основное их отличие от других светильников состоит в том, что они не имеют видимой внешней рамки,
+              благодаря чему создают эффект луча света, проникающего прямо с потолка. Такое исполнение придает интерьеру
+              особую
+              эстетическую привлекательность и современный шик. <br>
+              Своим универсальным креплением они великолепно подходят для различных типов потолков, будь то натяжные или
+              гипсокартонные конструкции. <br> <br>
+              Особенностью безрамных встраиваемых светильников является их способность устанавливаться в один уровень с
+              потолком, что
+              придает интерьеру элегантность и гармоничность.
+            </p>
+          </div>
+        </div>
+        <div class="property">
+          <div class="property__left-section">
+            <span class="property__spanchik"></span>
+            <div class="property__title">Характеристики</div>
+          </div>
+          <div class="property__expand-text" id="expandText">Развернуть</div>
+        </div>
+        <div class="property-ct" id="content">
+          <div class="property-ct__content-inner">
+            <div class="property-ct__characteristic-row">
+              <span>Материал</span>
+              <span>Алюминий и пластик</span>
+            </div>
+            <div class="property-ct__characteristic-row">
+              <span>Высота</span>
+              <span>42 мм</span>
+            </div>
+            <div class="property-ct__characteristic-row">
+              <span>Длина</span>
+              <span>136 мм</span>
+            </div>
+            <div class="property-ct__characteristic-row">
+              <span>Тип лампы</span>
+              <span>GU10</span>
+            </div>
+            <div class="property-ct__characteristic-row">
+              <span>Цвет</span>
+              <span>Чёрный</span>
+            </div>
+            <div class="property-ct__characteristic-row">
+              <span>Диаметр</span>
+              <span>86 мм</span>
+            </div>
+            <div class="property-ct__characteristic-row">
+              <span>Вольтажность</span>
+              <span>220V</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-separator"></div>
+      </div>
+    </section>
+  </main>
+  @@include('blocks/footer.html')
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
